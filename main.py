@@ -79,10 +79,11 @@ Type /list to know supported languages. Happy translating!"
 async def list_language(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = "Supported languages:\n" + \
         "Language code : Language name\n\n" + \
-        '\n'.join([f"{language_code} : {language_name}" for language_code,
+        '\n'.join([f"`{language_code}` : `{language_name}`" for language_code,
                   language_name in language_list.LANGUAGES.items()])
 
-    await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=text,
+                                   parse_mode='Markdown')
 
 
 async def incoming_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
