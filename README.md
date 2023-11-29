@@ -38,5 +38,5 @@ pip install -r requirements.txt
 
 ## 📝 License
 
-Copyright © 2023 [Dharun A P](https://github.com/Dharun-palanisamy). \
+Copyright © 2023 [Dharun A P](https://github.com/mr-u0b0dy). \
 This project is [MIT](LICENSE) licensed.
